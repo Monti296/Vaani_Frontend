@@ -25,7 +25,7 @@ function Sidewindow() {
     try {
       setThreadId(newThreadId);
       const res = await fetch(
-        `https://vaani-1-4cmq.onrender.com/api/thread/${newThreadId}`
+        `http://ec2-15-135-172-152.ap-southeast-2.compute.amazonaws.com:8181/api/thread/${newThreadId}`
       );
       const data = await res.json();
       setPrevChats(data);
@@ -39,7 +39,7 @@ function Sidewindow() {
   const deleteThread = async (deletethreadID) => {
     try {
       await fetch(
-        `https://vaani-1-4cmq.onrender.com/api/thread/${deletethreadID}`,
+        `http://ec2-15-135-172-152.ap-southeast-2.compute.amazonaws.com:8181/api/thread/${deletethreadID}`,
         {
           method: "DELETE",
         }
@@ -92,7 +92,7 @@ function Sidewindow() {
           <div className="connect">
             <p className="hide-title">Connect</p>
             <a
-              href="https://www.montirajput.space/"
+              href="https://www.montirajput.dev/"
               target="_blank"
               rel="noopener noreferrer"
             >
