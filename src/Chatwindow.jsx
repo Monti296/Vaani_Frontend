@@ -45,7 +45,7 @@ function Chatwindow() {
 
     try {
       const response = await fetch(
-        "http://ec2-15-135-172-152.ap-southeast-2.compute.amazonaws.com:8181/api/chat",
+        "/api/chat",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

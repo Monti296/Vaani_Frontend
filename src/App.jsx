@@ -17,7 +17,7 @@ function App() {
   const [isOpen, setIsOpen] = useState(false);
   const getAllthreads = async () => {
     try {
-      const reply = await fetch("http://ec2-15-135-172-152.ap-southeast-2.compute.amazonaws.com:8181/api/thread");
+      const reply = await fetch("/api/thread");
       const res = await reply.json();
       // console.log(res);
       setthreads(res);

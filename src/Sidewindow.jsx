@@ -25,7 +25,7 @@ function Sidewindow() {
     try {
       setThreadId(newThreadId);
       const res = await fetch(
-        `http://ec2-15-135-172-152.ap-southeast-2.compute.amazonaws.com:8181/api/thread/${newThreadId}`
+        `/api/thread/${newThreadId}`
       );
       const data = await res.json();
       setPrevChats(data);
@@ -39,7 +39,7 @@ function Sidewindow() {
   const deleteThread = async (deletethreadID) => {
     try {
       await fetch(
-        `http://ec2-15-135-172-152.ap-southeast-2.compute.amazonaws.com:8181/api/thread/${deletethreadID}`,
+        `/api/thread/${deletethreadID}`,
         {
           method: "DELETE",
         }
