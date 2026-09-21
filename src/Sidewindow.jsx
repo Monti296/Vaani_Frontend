@@ -128,7 +128,7 @@ function Sidewindow() {
           </ul>
           <div className="sign">
             <i className="fa-solid fa-user"></i>
-            <p>By Monti Rajput &hearts;</p>
+            <p>By Monti Rajput. &hearts;</p>
           </div>
         </>
       )}
