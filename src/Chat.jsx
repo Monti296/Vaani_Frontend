@@ -35,7 +35,7 @@ function Chat() {
         <div className="temp">
           <img src={dragon} alt="" />
           <h3 style={{ fontSize: "35px" }}>
-            Okay, let’s kick off a new conversation!
+            Okay, let’s Start a new conversation!
           </h3>
         </div>
       ) : (
