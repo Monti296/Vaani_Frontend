@@ -37,12 +37,7 @@ function Chatwindow() {
 
     // show user message immediately
     setReply(null);
-    const updatedChats = [
-  ...prevChats,
-  { role: "user", content: msg }
-];
-
-setPrevChats(updatedChats);
+    setPrevChats((chats) => [...chats, { role: "user", content: msg }]);
 
     setPrompt("");
     setNewChat(false);
@@ -55,7 +50,7 @@ setPrevChats(updatedChats);
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
-            message: updatedChats,
+            message: msg,
             threadId: currthreadId,
             count: prevChats.length,
           }),
